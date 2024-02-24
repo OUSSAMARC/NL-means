@@ -50,10 +50,10 @@ def extract_closest_neighbors(x_i, y_i, image, half_window, num_neighbors, t):
 
     return neighbors
 """
-Le kernel qu'on utilise cette fois ci est seuelement adapté au sel et poivre 
-car il ne prend pas en considération le pixel centrale (bruité) qui est totalement
-endommagé et qui ne contient donc pas d'information utile. Le pixel sel ou poivre 
-ne participe donc pas dans le procecessus de la recherche des voisinage ppv dans la fonction extract_closest_neighbors
+Le noyau que nous utilisons cette fois-ci est spécifiquement adapté au sel et au poivre, 
+car il ne prend pas en considération le pixel central (qui est bruité) et qui est donc totalement endommagé, 
+ne contenant aucune information utile. Ainsi, le pixel affecté par le sel ou le poivre ne participe pas au processus de 
+recherche des voisins les plus proches dans la fonction extract_closest_neighbors
 """
 
 # Taille de la fenêtre de voisinage
